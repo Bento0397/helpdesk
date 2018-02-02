@@ -82,9 +82,10 @@ $sql = new Sql();
 $codigo = '';
 
 $codigo = $_POST['codigo'];
-
+/*
 $usuario = $sql -> insert("INSERT INTO cad_usuario(name_usuario, adress_usuario, num_usuario, cep_usuario, tel_usuario, cel_usuario, email_usuario, login_usuario, password_usuario) VALUES (:name, :adress, :num ,:cep, :tel, :cel, :email, :login, :senha)" );
 
-echo json_encode($produto);
+*/
+echo json_encode($usuario);
 
 ?>

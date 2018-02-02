@@ -45,13 +45,6 @@ class Sql extends PDO {
 		return $stmt -> oci_fetch_all(statement, output)(PDO::FETCH_ASSOC);
 	}
 
-	public function insert($rawQuery,$params = array()){
-
-		$stmt = $this -> query($rawQuery, $params);
- 
-		return $stmt -> oci_fetch_all(statement, output)(PDO::FETCH_ASSOC);
-	}
-
 }
 
 ?>
