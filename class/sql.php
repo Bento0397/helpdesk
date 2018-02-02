@@ -42,7 +42,14 @@ class Sql extends PDO {
 
 		$stmt = $this -> query($rawQuery, $params);
  
-		return $stmt -> fetchAll(PDO::FETCH_ASSOC);
+		return $stmt -> oci_fetch_all(statement, output)(PDO::FETCH_ASSOC);
+	}
+
+	public function insert($rawQuery,$params = array()){
+
+		$stmt = $this -> query($rawQuery, $params);
+ 
+		return $stmt -> oci_fetch_all(statement, output)(PDO::FETCH_ASSOC);
 	}
 
 }
